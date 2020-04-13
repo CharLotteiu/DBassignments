@@ -1,0 +1,15 @@
+常见编译型高级编程语言数据库接口
+1. ADO：（ActiveX Data Object）ActiveX数据对象。只能供C++语言调用。
+2. ODBC：开放式数据库互连（Open Database Connectivity）
+3. OLE DB：数据库链接和嵌入对象（Object Linking and Embedding DataBase）。OLE DB 标准的具体实现是通过一组C++ API 函数。
+4. RDO：远程数据库对象（Remote Database Object）。
+
+常见解释型高级编程语言数据库接口
+1. Python DB-API
+2. Node.js
+
+Python编程语言链接数据库的不同方式比较
+1. sqlalchemy是python中著名的orm框架，通过这个框架可以不用关心sql语句，就能操作数据库。大大的提高开发效率。当然通过orm来操作数据库会执行很多的数据库冗余操作，降低程序的运行效率。
+2. MySQLdb是用于Python链接Mysql数据库的接口，它实现了Python 数据库API规范V2.0，基于MySQL C API上建立的。
+3. PyMySQL是一个纯Python写的MySQL客户端，它的目标是替代MySQLdb，可以在CPython、PyPy、IronPython和Jython环境下运行。PyMySQL的性能和MySQLdb几乎相当，如果对性能要求不是特别的强，使用PyMySQL将更加方便。PyMySQL的使用方法和MySQLdb几乎一样。
+4. PostgreSQL可以用Python psycopg2模块集成。 sycopg2是Python编程语言的PostgreSQL数据库的适配器。 其程序代码少，速度快，稳定。
